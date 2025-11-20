@@ -1,17 +1,17 @@
 export const themes = {
   dark: {
-    backgroundDiv: "bg-red-500",
-    minitag: "",
-    titleColor: "text-blue-400",
+    backgroundDiv: "bg-black/90",
+    minitag: "darker",
+    titleColor: "text-white",
     heroTitleFontWeight: "font-medium",
-    heroTitleFocus: "",
-    subtitleColor: "text-blue-400",
+    heroTitleFocus: "font-extrabold",
+    subtitleColor: "text-white",
     textColor: "fontLighter",
     mainColor: "lighter",
     secondaryColor: "darker",
     themeButtonPrimary: "light",
-    themeButton: "light",
-    dots: "",
+    themeButton: "dark",
+    dots: "fontLighter",
   },
 
   light: {
