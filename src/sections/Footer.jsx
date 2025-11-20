@@ -77,26 +77,25 @@ export default function Footer() {
             </MotionDivDownToUp>
 
             <div className="mt-12 text-sm text-fontLighter/50 ">
-              {content.footer.texts.direitosReservados}{" "}
+              <p>{content.footer.texts.direitosReservados}</p>
               <a onClick={abrirModal} className="underline cursor-pointer">
                 Políticas de privacidade
               </a>{" "}
-              - Desenvolvido com excelência por{" "}
-              <a
-                target="_blank"
-                href="https://paperstreet.com.br"
-                className="underline"
-              >
-                Paper Street
-              </a>
+              <p>
+                Desenvolvido com excelência por{" "}
+                <a
+                  target="_blank"
+                  href="https://paperstreet.com.br"
+                  className="underline"
+                >
+                  Paper Street
+                </a>
+              </p>
             </div>
           </div>
           <Dialog
             className="font-secondFont"
             closeIcon={<X size={20} />}
-            // header={
-            //   <span className="text-black">Políticas de privacidade</span>
-            // }
             visible={visible}
             onHide={() => setVisible(false)}
             style={{ width: "50vw" }}

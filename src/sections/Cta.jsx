@@ -2,8 +2,21 @@ import MotionDivDownToUp from "../components/animations/MotionDownToUp.jsx";
 import CtaButton from "../components/buttons/CtaButton";
 import SectionArea from "../components/sectionElements/SectionArea";
 import content from "../content/Content";
+import { themes } from "../content/Themes";
 
-export default function Cta() {
+export default function Cta({ colorMode }) {
+  const {
+    backgroundDiv,
+    textColor,
+    heroTitleFontWeight,
+    subtitleColor,
+    themeButton,
+    themeButtonPrimary,
+    heroTitleFocus,
+    mainColor,
+    secondaryColor,
+  } = themes[colorMode] || themes.default;
+
   return (
     <>
       <div className="relative ">
@@ -13,13 +26,15 @@ export default function Cta() {
             alt="Imagem ilustrativa"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/90"></div>
+          <div className={`absolute inset-0 ${backgroundDiv}`}></div>
         </div>
 
         <SectionArea>
           <div className="relative z-10 mx-auto text-center max-w-7xl">
             <MotionDivDownToUp>
-              <span className="inline-flex items-center rounded-full bg-darker text-fontLighter font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ring-1 ring-inset ring-white/10">
+              <span
+                className={`inline-flex items-center rounded-full text-${textColor} font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ring-1 ring-inset ring-${textColor}/100`}
+              >
                 <svg
                   className="w-4 h-4 mr-1.5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,12 +54,14 @@ export default function Cta() {
             </MotionDivDownToUp>
 
             <MotionDivDownToUp>
-              <h2 className="max-w-3xl mx-auto mt-6 text-3xl text-fontLighter font-mainFont lg:text-4xl">
+              <h2
+                className={`max-w-3xl mx-auto mt-6 text-3xl text-${textColor} font-mainFont lg:text-4xl`}
+              >
                 {content.cta.texts.titulo}
               </h2>
             </MotionDivDownToUp>
 
-            <div className="max-w-3xl mx-auto mt-10 shadow-lg rounded-2xl deskt">
+            <div className="max-w-3xl mx-auto mt-10 rounded-2xl deskt">
               <MotionDivDownToUp>
                 <div className="inline-block mb-16 text-left desktop1:max-w-[400px]">
                   <ul className="space-y-5">
@@ -53,7 +70,7 @@ export default function Cta() {
                       .map((ponto) => (
                         <li key={ponto.index} className="flex items-center">
                           <svg
-                            className="flex-shrink-0 w-6 h-6 text-lighter"
+                            className={`flex-shrink-0 w-6 h-6 text-${textColor}`}
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="currentColor"
@@ -65,7 +82,7 @@ export default function Cta() {
                             />
                           </svg>
 
-                          <span className="ml-3 text-lg text-fontLighter">
+                          <span className={`ml-3 text-lg text-${textColor}`}>
                             {ponto.texto}
                           </span>
                         </li>

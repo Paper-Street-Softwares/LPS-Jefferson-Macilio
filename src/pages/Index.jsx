@@ -7,15 +7,15 @@ import Hero from "../sections/Hero";
 import Transformacao from "../sections/Transformacao";
 
 export default function Index() {
-  const colorMode = "light";
+  const colorMode = "light"; // default, light e dark
 
   return (
     <>
-      <Hero colorMode={colorMode} imagemFocadaBackground={true} />
+      <Hero colorMode={colorMode} imagemFocadaBackground={false} />
       <main>
         <Features />
         <Transformacao />
-        <Cta />
+        <Cta colorMode={colorMode} />
         <About />
       </main>
       <Footer />

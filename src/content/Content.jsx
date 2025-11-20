@@ -254,7 +254,7 @@ const content = {
       ),
       labelBotaoPrincial: "Quero Ser Atendido Agora",
       direitosReservados:
-        "2025 • Garcia Machado • Todos os direitos reservados • ",
+        "2025 - Garcia Machado - Todos os direitos reservados",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
         <div className="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
