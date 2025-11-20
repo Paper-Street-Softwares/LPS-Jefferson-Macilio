@@ -17,8 +17,10 @@ export const infos = {
 const content = {
   hero: {
     imagens: {
-      backgroundHero: imgBackground,
-      focadaHero: imgHero,
+      backgroundHero:
+        "https://senhorcontabil.com.br/wp-content/uploads/2025/05/Restituicao-do-Imposto-de-Renda-2025-Confira-Quem-Tem-Direito-Datas-e-Como-Consultar.jpg",
+      focadaHero:
+        "https://senhorcontabil.com.br/wp-content/uploads/2025/05/Restituicao-do-Imposto-de-Renda-2025-Confira-Quem-Tem-Direito-Datas-e-Como-Consultar.jpg",
       logo: imgLogo,
     },
     texts: {
