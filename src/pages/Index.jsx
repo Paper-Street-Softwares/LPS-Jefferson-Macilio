@@ -9,7 +9,7 @@ import Transformacao from "../sections/Transformacao";
 export default function Index() {
   return (
     <>
-      <Hero imagemFocadaBackground={false} />
+      <Hero colorMode="light" imagemFocadaBackground={false} />
       <main>
         <Features />
         <Transformacao />

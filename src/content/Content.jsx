@@ -1,13 +1,4 @@
-import {
-  BriefcaseBusiness,
-  Hourglass,
-  Users,
-  FileText,
-  Tag,
-  Angry,
-  FileX,
-  Scale,
-} from "lucide-react";
+import { HandCoins, FileX, UserRoundSearch } from "lucide-react";
 import imgLogo from "../assets/logo.webp";
 import imgHero from "../assets/hero.webp";
 import imgAbout from "../assets/about.webp";
@@ -31,11 +22,14 @@ const content = {
       logo: imgLogo,
     },
     texts: {
-      etiqueta: "⚖️ Advogado Tributarista • São Paulo • SP",
+      etiqueta: "Advogado Tributarista em São Paulo - SP",
       titulo: (
         <p>
-          Precisando de ajuda com a<strong> restituição </strong>do seu Imposto
-          de Renda?
+          Problemas com a{" "}
+          <span className="text-lighter font-extrabold capitalize">
+            restituição{" "}
+          </span>
+          do seu Imposto de Renda?
         </p>
       ),
       subtitulo:
@@ -47,13 +41,13 @@ const content = {
 
   features: {
     texts: {
-      titulo: "Suas dúvidas de IR resolvidas",
+      titulo: "Áreas de atuação",
       labelBotaoPrincial: "Preciso De Ajuda Com Meu Caso",
     },
     cards: [
       {
         index: 1,
-        icone: FileText,
+        icone: FileX,
         titulo: "Erros na declaração",
         descricao:
           "Analiso e corrijo falhas que podem gerar multas, cuidando de todo o processo por você.",
@@ -69,7 +63,7 @@ const content = {
       },
       {
         index: 2,
-        icone: BriefcaseBusiness,
+        icone: UserRoundSearch,
         titulo: "Malha fina",
         descricao:
           "Acompanho seu caso, explico cada passo e trabalho para regularizar sua situação com segurança.",
@@ -85,7 +79,7 @@ const content = {
       },
       {
         index: 3,
-        icone: Scale,
+        icone: HandCoins,
         titulo: "Restituição retida",
         descricao:
           "Revejo documentos e ajustes necessários para destravar sua restituição com clareza e orientação jurídica.",

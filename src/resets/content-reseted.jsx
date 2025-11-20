@@ -1,12 +1,4 @@
-import {
-  BriefcaseBusiness,
-  Hourglass,
-  Users,
-  FileText,
-  Tag,
-  Angry,
-  FileX,
-} from "lucide-react";
+import {} from "lucide-react";
 import imgLogo from "../assets/logo.webp";
 import imgHero from "../assets/hero.webp";
 import imgAbout from "../assets/about.webp";
@@ -51,7 +43,7 @@ const content = {
     cards: [
       {
         index: 1,
-        icone: BriefcaseBusiness,
+        icone: null,
         titulo: "A_Definir",
         descricao: "A_Definir",
         labelBotaoModal: "Saiba mais",
@@ -66,7 +58,7 @@ const content = {
       },
       {
         index: 2,
-        icone: Angry,
+        icone: null,
         titulo: "A_Definir",
         descricao: "A_Definir",
         labelBotaoModal: "Saiba mais",
@@ -81,7 +73,7 @@ const content = {
       },
       {
         index: 3,
-        icone: FileX,
+        icone: null,
         titulo: "A_Definir",
         descricao: "A_Definir",
         labelBotaoModal: "Saiba mais",

@@ -2,7 +2,7 @@ import content from "../content/Content";
 import MotionDivDownToUp from "../components/animations/MotionDownToUp.jsx";
 import CtaButton from "../components/buttons/CtaButton";
 
-export default function Hero({ imagemFocadaBackground }) {
+export default function Hero({ imagemFocadaBackground, colorMode }) {
   const themes = {
     dark: {
       backgroundDiv: "bg-red-500",
@@ -13,9 +13,9 @@ export default function Hero({ imagemFocadaBackground }) {
     },
 
     light: {
-      backgroundDiv: "bg-white/80",
-      titleColor: "text-black",
-      subtitleColor: "text-black",
+      backgroundDiv: "bg-white/90",
+      titleColor: "text-fontDarker",
+      subtitleColor: "text-fontDarker",
       themeButtonPrimary: "light",
       themeButton: "dark",
     },
@@ -29,14 +29,13 @@ export default function Hero({ imagemFocadaBackground }) {
     },
   };
 
-  // 🔥 Corrigido aqui
   const {
     backgroundDiv,
     titleColor,
     subtitleColor,
     themeButton,
     themeButtonPrimary,
-  } = themes.light;
+  } = themes[colorMode] || themes.default;
 
   return (
     <>
@@ -79,13 +78,15 @@ export default function Hero({ imagemFocadaBackground }) {
             </MotionDivDownToUp>
           )}
           <MotionDivDownToUp>
-            <span className="inline-flex mb-6 items-center capitalize rounded-full font-secondFont bg-black/60 px-4 py-1.5 text-sm font-medium text-fontLighter/80 ring-1 ring-inset ring-neutral-400">
+            <span
+              className={`inline-flex mb-6 items-center capitalize rounded-full font-secondFont ${themeButton} ${titleColor} px-4 py-1.5 text-sm font-medium  ring-1 ring-inset ring-neutral-400`}
+            >
               {content.hero.texts.etiqueta}
             </span>
           </MotionDivDownToUp>
           <MotionDivDownToUp>
             <h1
-              className={`text-4xl font-medium tracking-tight capitalize sm:text-5xl lg:text-6xl font-mainFont ${titleColor}`}
+              className={`text-4xl font-bold tracking-tight capitalize sm:text-5xl lg:text-6xl font-mainFont ${titleColor}`}
             >
               {content.hero.texts.titulo}
             </h1>
