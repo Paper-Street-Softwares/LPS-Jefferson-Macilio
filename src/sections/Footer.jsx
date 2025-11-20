@@ -6,12 +6,16 @@ import React, { useState } from "react";
 import { Dialog } from "primereact/dialog";
 import { X, MoveRight } from "lucide-react";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
+import { themes } from "../content/Themes";
 
-export default function Footer() {
+export default function Footer({ colorMode }) {
   const [visible, setVisible] = useState(false);
   const abrirModal = () => {
     setVisible(true);
   };
+
+  const { backgroundDiv, textColor, minitag, mainColor } =
+    themes[colorMode] || themes.default;
 
   return (
     <>
@@ -22,12 +26,14 @@ export default function Footer() {
             alt="Imagem ilustrativa"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/90"></div>
+          <div className={`absolute inset-0 ${backgroundDiv}`}></div>
         </div>
-        <SectionArea>
+        <SectionArea paddingbot={false} className="pb-8">
           <div className="relative z-10 mx-auto text-center max-w-7xl ">
             <MotionDivDownToUp>
-              <span className="inline-flex items-center rounded-full bg-darker text-fontLighter font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ring-1 ring-inset ring-white/10">
+              <span
+                className={`inline-flex items-center rounded-full text-${textColor} bg-${minitag} font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ${textColor}`}
+              >
                 <svg
                   className="w-4 h-4 mr-1.5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +53,9 @@ export default function Footer() {
             </MotionDivDownToUp>
 
             <MotionDivDownToUp>
-              <h2 className="max-w-3xl mx-auto mt-6 text-3xl text-fontLighter font-mainFont lg:text-4xl mb-12">
+              <h2
+                className={`max-w-3xl mx-auto mt-6 text-3xl text-${textColor} font-mainFont lg:text-4xl mb-12 font-medium`}
+              >
                 {content.footer.texts.titulo}
               </h2>
             </MotionDivDownToUp>
@@ -60,21 +68,15 @@ export default function Footer() {
             />
 
             <MotionDivDownToUp>
-              <div className="max-w-xs mx-auto mt-16 border-t border-white/10"></div>
+              <div
+                className={`max-w-xs mx-auto mt-16 border-t border-neutral-500/50`}
+              ></div>
             </MotionDivDownToUp>
 
-            <MotionDivDownToUp>
-              <p className="mt-6 text-sm text-fontLighter/50">
-                {content.footer.pontos.ponto1} • {content.footer.pontos.ponto2}{" "}
-                • {content.footer.pontos.ponto3}
-              </p>
-            </MotionDivDownToUp>
-
-            <div className="mt-12 text-sm text-fontLighter/50 ">
+            <div
+              className={`mt-12 text-sm text-${textColor} flex flex-col gap-2 opacity-75`}
+            >
               <p>{content.footer.texts.direitosReservados}</p>
-              <a onClick={abrirModal} className="underline cursor-pointer">
-                Políticas de privacidade
-              </a>{" "}
               <p>
                 Desenvolvido com excelência por{" "}
                 <a
@@ -85,6 +87,9 @@ export default function Footer() {
                   Paper Street
                 </a>
               </p>
+              <a onClick={abrirModal} className="underline cursor-pointer">
+                Políticas de privacidade
+              </a>{" "}
             </div>
           </div>
           <Dialog

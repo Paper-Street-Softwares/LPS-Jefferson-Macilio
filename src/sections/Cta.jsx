@@ -46,7 +46,7 @@ export default function Cta({ colorMode }) {
 
             <MotionDivDownToUp>
               <h2
-                className={`max-w-3xl mx-auto mt-6 text-3xl text-${textColor} font-mainFont lg:text-4xl`}
+                className={`max-w-3xl mx-auto mt-6 text-3xl text-${textColor} font-mainFont lg:text-4xl font-medium`}
               >
                 {content.cta.texts.titulo}
               </h2>

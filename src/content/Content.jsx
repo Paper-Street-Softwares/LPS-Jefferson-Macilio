@@ -494,11 +494,6 @@ const content = {
         </div>
       ),
     },
-    pontos: {
-      ponto1: "Profissionalismo",
-      ponto2: "Experiência",
-      ponto3: "Resultados",
-    },
   },
 
   util: {

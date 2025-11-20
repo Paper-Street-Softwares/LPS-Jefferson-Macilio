@@ -18,7 +18,7 @@ export default function Index() {
         <Cta colorMode={colorMode} />
         <About />
       </main>
-      <Footer />
+      <Footer colorMode={colorMode} />
       <WhatsappFloatingButton />
     </>
   );
