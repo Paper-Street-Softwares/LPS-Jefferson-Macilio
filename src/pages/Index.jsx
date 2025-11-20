@@ -7,7 +7,7 @@ import Hero from "../sections/Hero";
 import Transformacao from "../sections/Transformacao";
 
 export default function Index() {
-  const colorMode = "dark"; // default, light e dark
+  const colorMode = "light"; // default, light e dark
 
   return (
     <>
