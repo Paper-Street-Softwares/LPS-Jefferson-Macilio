@@ -7,13 +7,13 @@ export default function Cta() {
   return (
     <>
       <div className="relative ">
-        <div class="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0">
           <img
             src={content.cta.imagem.background}
             alt="Imagem ilustrativa"
-            class="w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-black/90"></div>
+          <div className="absolute inset-0 bg-black/90"></div>
         </div>
 
         <SectionArea>

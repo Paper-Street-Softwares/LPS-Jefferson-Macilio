@@ -13,6 +13,7 @@ export const theme = {
     colors: {
       lighter: "#770000",
       darker: "#222222",
+      darker2: "",
       fontLighter: "#ffffff",
       fontDarker: "#000000",
     },

@@ -1,40 +1,17 @@
 import content from "../content/Content";
 import MotionDivDownToUp from "../components/animations/MotionDownToUp.jsx";
 import CtaButton from "../components/buttons/CtaButton";
+import { themes } from "../content/Themes";
 
 export default function Hero({ imagemFocadaBackground, colorMode }) {
-  const themes = {
-    dark: {
-      backgroundDiv: "bg-red-500",
-      titleColor: "text-blue-400",
-      subtitleColor: "text-blue-400",
-      themeButtonPrimary: "light",
-      themeButton: "light",
-    },
-
-    light: {
-      backgroundDiv: "bg-white/90",
-      titleColor: "text-fontDarker",
-      subtitleColor: "text-fontDarker",
-      themeButtonPrimary: "light",
-      themeButton: "dark",
-    },
-
-    default: {
-      backgroundDiv: "bg-black",
-      titleColor: "text-white",
-      subtitleColor: "text-white",
-      themeButtonPrimary: "light",
-      themeButton: "dark",
-    },
-  };
-
   const {
     backgroundDiv,
     titleColor,
+    heroTitleFontWeight,
     subtitleColor,
     themeButton,
     themeButtonPrimary,
+    heroTitleFocus,
   } = themes[colorMode] || themes.default;
 
   return (
@@ -63,7 +40,6 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
                 alt="Logomarca"
                 className="w-[288px] phone2:w-[330px] phone3:w-[350px] h-auto mb-6"
               />
-              {/* <div className="w-[288px] phone2:w-[330px] phone3:w-[350px] h-[110px] mb-6 bg-gray-300"></div> */}
             </div>
           </MotionDivDownToUp>
           {imagemFocadaBackground && (
@@ -74,7 +50,6 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
                 }}
                 className="bg-center rounded-[4px] bg-no-repeat bg-cover h-[400px] w-[450px] md:h-[600px] md:w-[600px] lg:h-[500px] lg:w-[500px]"
               />
-              {/* <div className="h-[400px] w-[450px] md:h-[600px] md:w-[600px] lg:h-[500px] lg:w-[500px] bg-gray-300"></div> */}
             </MotionDivDownToUp>
           )}
           <MotionDivDownToUp>
@@ -86,9 +61,13 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
           </MotionDivDownToUp>
           <MotionDivDownToUp>
             <h1
-              className={`text-4xl font-bold tracking-tight capitalize sm:text-5xl lg:text-6xl font-mainFont ${titleColor}`}
+              className={`text-4xl ${heroTitleFontWeight} tracking-tight capitalize sm:text-5xl lg:text-6xl font-mainFont ${titleColor}`}
             >
-              {content.hero.texts.titulo}
+              {content.hero.texts.titulo.antes}{" "}
+              <span className={`${heroTitleFocus}`}>
+                {content.hero.texts.titulo.palavraFocada}
+              </span>{" "}
+              {content.hero.texts.titulo.depois}
             </h1>
           </MotionDivDownToUp>
           <MotionDivDownToUp>

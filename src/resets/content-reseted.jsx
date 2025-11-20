@@ -257,29 +257,31 @@ const content = {
       direitosReservados: "2025 • A_Definir • Todos os direitos reservados • ",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
-        <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
-          <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
+        <div className="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
+          <h1 className="text-3xl font-bold mb-6">Política de Privacidade</h1>
 
-          <h2 class="text-xl font-semibold mb-3">Informações Importantes</h2>
+          <h2 className="text-xl font-semibold mb-3">
+            Informações Importantes
+          </h2>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Esta Política de Privacidade descreve como coletamos, utilizamos,
             armazenamos e compartilhamos informações pessoais de usuários de
             nossos serviços, em conformidade com a Lei Geral de Proteção de
             Dados (LGPD) - Lei nº 13.709/2018.
           </p>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Nos comprometemos a proteger a privacidade e os dados pessoais de
             todos os usuários, garantindo transparência e segurança em todas as
             etapas de tratamento.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">Definições</h2>
+          <h2 className="text-xl font-semibold mb-4">Definições</h2>
 
-          <ul class="list-disc ml-6 mb-6 space-y-2">
+          <ul className="list-disc ml-6 mb-6 space-y-2">
             <li>
               <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
@@ -333,18 +335,18 @@ const content = {
             </li>
           </ul>
 
-          <p class="mb-4">
+          <p className="mb-4">
             <strong>Transparência:</strong> direito do titular de receber
             informações claras e acessíveis sobre o uso de seus dados.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">Direitos dos Titulares</h2>
+          <h2 className="text-xl font-semibold mb-4">Direitos dos Titulares</h2>
 
-          <p class="mb-3">Os titulares de dados pessoais têm direito a:</p>
+          <p className="mb-3">Os titulares de dados pessoais têm direito a:</p>
 
-          <ul class="list-disc ml-6 mb-6 space-y-2">
+          <ul className="list-disc ml-6 mb-6 space-y-2">
             <li>Confirmar se seus dados são tratados;</li>
             <li>
               Acessar, corrigir, atualizar ou solicitar a exclusão de seus
@@ -355,20 +357,20 @@ const content = {
             <li>Opor-se ao tratamento quando considerar irregular.</li>
           </ul>
 
-          <p class="mb-4">
+          <p className="mb-4">
             As solicitações podem ser feitas por meio dos canais de contato
             disponibilizados pela empresa.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-4">
             Coleta e Uso de Dados Pessoais
           </h2>
 
-          <p class="mb-3">Podemos coletar dados pessoais por meio de:</p>
+          <p className="mb-3">Podemos coletar dados pessoais por meio de:</p>
 
-          <ul class="list-disc ml-6 mb-6 space-y-2">
+          <ul className="list-disc ml-6 mb-6 space-y-2">
             <li>
               Formulários de contato e cadastro (nome, e-mail, telefone,
               endereço, CPF, entre outros);
@@ -387,9 +389,9 @@ const content = {
             </li>
           </ul>
 
-          <p class="mb-3">Esses dados são utilizados para:</p>
+          <p className="mb-3">Esses dados são utilizados para:</p>
 
-          <ul class="list-disc ml-6 mb-6 space-y-2">
+          <ul className="list-disc ml-6 mb-6 space-y-2">
             <li>Operar, manter e melhorar nossos serviços;</li>
             <li>Personalizar a experiência do usuário;</li>
             <li>Cumprir obrigações legais e contratuais;</li>
@@ -403,13 +405,13 @@ const content = {
             </li>
           </ul>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-4">
             Cookies e Tecnologias de Rastreamento
           </h2>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Nosso site pode utilizar cookies e tecnologias semelhantes para
             melhorar a navegação e compreender como os usuários interagem com o
             conteúdo. O uso de cookies não estritamente necessários dependerá do
@@ -417,15 +419,15 @@ const content = {
             qualquer momento em seu navegador.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-4">
             Compartilhamento e Transferência de Dados
           </h2>
 
-          <p class="mb-3">Podemos compartilhar dados pessoais com:</p>
+          <p className="mb-3">Podemos compartilhar dados pessoais com:</p>
 
-          <ul class="list-disc ml-6 mb-6 space-y-2">
+          <ul className="list-disc ml-6 mb-6 space-y-2">
             <li>
               Parceiros e prestadores de serviço, que auxiliam na operação
               técnica, hospedagem, marketing ou suporte;
@@ -434,30 +436,32 @@ const content = {
             <li>Instituições financeiras, em transações de pagamento.</li>
           </ul>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Em caso de transferência internacional de dados, serão adotadas
             medidas para garantir que o tratamento esteja em conformidade com a
             LGPD e com níveis adequados de proteção.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-4">
             Armazenamento e Retenção dos Dados
           </h2>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Os dados pessoais são armazenados apenas pelo tempo necessário para
             cumprir as finalidades para as quais foram coletados ou conforme
             exigido por lei. Após o período de retenção, os dados são eliminados
             de forma segura, respeitando normas técnicas e regulatórias.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">Segurança da Informação</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            Segurança da Informação
+          </h2>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Adotamos medidas técnicas, físicas e administrativas adequadas para
             proteger os dados pessoais contra acesso não autorizado, perda,
             alteração, destruição ou divulgação indevida. Embora nenhuma medida
@@ -465,20 +469,22 @@ const content = {
             práticas de segurança.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">Alterações nesta Política</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            Alterações nesta Política
+          </h2>
 
-          <p class="mb-4">
+          <p className="mb-4">
             Esta Política de Privacidade poderá ser atualizada periodicamente,
             conforme alterações legais ou melhorias em nossos processos.
             Recomendamos que o usuário revise este documento regularmente para
             manter-se informado sobre como protegemos suas informações.
           </p>
 
-          <div class="border-t-2 border-black my-8"></div>
+          <div className="border-t-2 border-black my-8"></div>
 
-          <h2 class="text-xl font-semibold mb-4">Contato</h2>
+          <h2 className="text-xl font-semibold mb-4">Contato</h2>
 
           <p>
             Em caso de dúvidas, solicitações ou exercício de direitos
@@ -519,7 +525,7 @@ const content = {
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="lucide lucide-calendar-icon lucide-calendar"
+        className="lucide lucide-calendar-icon lucide-calendar"
       >
         <path d="M8 2v4" />
         <path d="M16 2v4" />

@@ -16,13 +16,13 @@ export default function Footer() {
   return (
     <>
       <div className="relative">
-        <div class="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0">
           <img
             src={content.footer.imagem.background}
             alt="Imagem ilustrativa"
-            class="w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-black/90"></div>
+          <div className="absolute inset-0 bg-black/90"></div>
         </div>
         <SectionArea>
           <div className="relative z-10 mx-auto text-center max-w-7xl ">
