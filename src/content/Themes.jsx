@@ -1,6 +1,7 @@
 export const themes = {
   dark: {
     backgroundDiv: "bg-red-500",
+    minitag: "",
     titleColor: "text-blue-400",
     heroTitleFontWeight: "font-medium",
     heroTitleFocus: "",
@@ -10,10 +11,12 @@ export const themes = {
     secondaryColor: "darker",
     themeButtonPrimary: "light",
     themeButton: "light",
+    dots: "",
   },
 
   light: {
     backgroundDiv: "bg-white/90",
+    minitag: "transparent border border-1px border-lighter/50",
     titleColor: "text-fontDarker",
     heroTitleFontWeight: "font-medium",
     heroTitleFocus: "font-extrabold text-lighter",
@@ -23,10 +26,12 @@ export const themes = {
     secondaryColor: "darker",
     themeButtonPrimary: "light",
     themeButton: "dark",
+    dots: "lighter",
   },
 
   default: {
     backgroundDiv: "bg-black/90",
+    minitag: "darker",
     titleColor: "text-white",
     heroTitleFontWeight: "font-medium",
     heroTitleFocus: "font-extrabold",
@@ -36,5 +41,6 @@ export const themes = {
     secondaryColor: "darker",
     themeButtonPrimary: "light",
     themeButton: "dark",
+    dots: "fontLighter",
   },
 };

@@ -5,17 +5,8 @@ import content from "../content/Content";
 import { themes } from "../content/Themes";
 
 export default function Cta({ colorMode }) {
-  const {
-    backgroundDiv,
-    textColor,
-    heroTitleFontWeight,
-    subtitleColor,
-    themeButton,
-    themeButtonPrimary,
-    heroTitleFocus,
-    mainColor,
-    secondaryColor,
-  } = themes[colorMode] || themes.default;
+  const { backgroundDiv, textColor, minitag, dots } =
+    themes[colorMode] || themes.default;
 
   return (
     <>
@@ -33,7 +24,7 @@ export default function Cta({ colorMode }) {
           <div className="relative z-10 mx-auto text-center max-w-7xl">
             <MotionDivDownToUp>
               <span
-                className={`inline-flex items-center rounded-full text-${textColor} font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ring-1 ring-inset ring-${textColor}/100`}
+                className={`inline-flex items-center rounded-full text-${textColor} bg-${minitag} font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ${textColor}`}
               >
                 <svg
                   className="w-4 h-4 mr-1.5"
@@ -70,7 +61,7 @@ export default function Cta({ colorMode }) {
                       .map((ponto) => (
                         <li key={ponto.index} className="flex items-center">
                           <svg
-                            className={`flex-shrink-0 w-6 h-6 text-${textColor}`}
+                            className={`flex-shrink-0 w-6 h-6 text-${dots}`}
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="currentColor"
