@@ -29,7 +29,7 @@ const content = {
         depois: "do seu Imposto de Renda?",
       },
       subtitulo:
-        "Com sólida experiência em IR, ajudo quem caiu em erros ou malha fina a corrigir tudo com segurança, evitando multas e trazendo mais tranquilidade.",
+        "Com sólida experiência em Imposto de Renda, ajudo quem caiu em erros ou malha fina a corrigir tudo com segurança, evitando multas e trazendo mais tranquilidade.",
       labelBotaoPrincial: "Falar com Advogado no Whatsapp",
       labelBotaoSecundario: "Agendar Horário",
     },
@@ -37,7 +37,7 @@ const content = {
 
   features: {
     texts: {
-      titulo: "Áreas de atuação",
+      titulo: "Seu Imposto de Renda descomplicado",
       labelBotaoPrincial: "Preciso De Ajuda Com Meu Caso",
     },
     cards: [
@@ -103,7 +103,7 @@ const content = {
         {
           index: 1,
           texto:
-            "Você está inseguro(a) com erros no IR e teme cair na malha fina",
+            "Você está inseguro(a) com erros no Imposto de Renda e teme cair na malha fina",
         },
         {
           index: 2,
@@ -124,7 +124,7 @@ const content = {
         {
           index: 1,
           texto:
-            "Vive com tranquilidade sabendo que seu IR está sendo corrigido e acompanhado de perto",
+            "Vive com tranquilidade sabendo que seu Imposto de Renda está sendo corrigido e acompanhado de perto",
         },
         {
           index: 2,
@@ -149,7 +149,7 @@ const content = {
 
       titulo: (
         <h2>
-          Cada minuto sem agir no seu IR pode aumentar
+          Cada minuto sem agir no seu Imposto de Renda pode aumentar
           <strong> riscos e prejuízos!</strong>
         </h2>
       ),
