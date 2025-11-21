@@ -94,7 +94,7 @@ const content = {
 
   transformacao: {
     texts: {
-      titulo: "Orientação jurídica para",
+      titulo: "Orientação jurídica para regularização do Imposto de Renda",
       labelBotaoPrincial: "Falar com Advogado",
     },
     antes: {
