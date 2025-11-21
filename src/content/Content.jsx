@@ -24,9 +24,9 @@ const content = {
     texts: {
       etiqueta: "Advogado Tributarista em São Paulo - SP",
       titulo: {
-        antes: "Problemas com a",
-        palavraFocada: "restituição",
-        depois: "do seu Imposto de Renda?",
+        antes: "Assessoria jurídica em",
+        palavraFocada: "Restituição e Regularização",
+        depois: "do Imposto de Renda",
       },
       subtitulo:
         "Com sólida experiência em Imposto de Renda, ajudo quem caiu em erros ou malha fina a corrigir tudo com segurança, evitando multas e trazendo mais tranquilidade.",
@@ -37,8 +37,8 @@ const content = {
 
   features: {
     texts: {
-      titulo: "Seu Imposto de Renda descomplicado",
-      labelBotaoPrincial: "Preciso De Ajuda Com Meu Caso",
+      titulo: "Imposto de Renda com orientação jurídica especializada",
+      labelBotaoPrincial: "Entrar em Contato",
     },
     cards: [
       {
@@ -46,7 +46,7 @@ const content = {
         icone: FileX,
         titulo: "Erros na declaração",
         descricao:
-          "Analiso e corrijo falhas que podem gerar multas, cuidando de todo o processo por você.",
+          "Identificação e orientação jurídica para a correção de inconsistências na declaração, conforme a legislação vigente.",
         labelBotaoModal: "Saiba mais",
         textoModal: (
           <p>
@@ -62,7 +62,7 @@ const content = {
         icone: UserRoundSearch,
         titulo: "Malha fina",
         descricao:
-          "Acompanho seu caso, explico cada passo e trabalho para regularizar sua situação com segurança.",
+          "Análise e acompanhamento jurídico de situações relacionadas à malha fina, com esclarecimentos sobre cada etapa do procedimento.",
         labelBotaoModal: "Saiba mais",
         textoModal: (
           <p>
@@ -78,7 +78,7 @@ const content = {
         icone: HandCoins,
         titulo: "Restituição retida",
         descricao:
-          "Revejo documentos e ajustes necessários para destravar sua restituição com clareza e orientação jurídica.",
+          "Avaliação dos motivos da retenção e orientação sobre os ajustes necessários para a regularização junto aos órgãos competentes.",
         labelBotaoModal: "Saiba mais",
         textoModal: (
           <p>
@@ -94,8 +94,8 @@ const content = {
 
   transformacao: {
     texts: {
-      titulo: "Recupere sua tranquilidade fiscal",
-      labelBotaoPrincial: "Preciso Da Ajuda De Um Advogado",
+      titulo: "Orientação jurídica para regularização do Imposto de Renda",
+      labelBotaoPrincial: "Falar com Advogado",
     },
     antes: {
       etiqueta: "ANTES",
@@ -103,17 +103,16 @@ const content = {
         {
           index: 1,
           texto:
-            "Você está inseguro(a) com erros no Imposto de Renda e teme cair na malha fina",
+            "Dúvidas sobre possíveis erros na declaração do Imposto de Renda",
         },
         {
           index: 2,
           texto:
-            "Não sabe se precisa de um advogado para resolver pendências fiscais",
+            "Insegurança sobre a necessidade de suporte jurídico para tratar pendências fiscais",
         },
         {
           index: 3,
-          texto:
-            "Fica preocupado(a) pensando nas multas e na demora para receber sua restituição",
+          texto: "Preocupação com eventuais multas ou atrasos na restituição",
         },
       ],
     },
@@ -124,17 +123,17 @@ const content = {
         {
           index: 1,
           texto:
-            "Vive com tranquilidade sabendo que seu Imposto de Renda está sendo corrigido e acompanhado de perto",
+            "Maior segurança ao contar com acompanhamento jurídico durante a regularização da declaração",
         },
         {
           index: 2,
           texto:
-            "Tem contato direto comigo sempre que precisar, sem buscar outros profissionais",
+            "Esclarecimentos contínuos sobre cada etapa, com orientação direta e adequada ao seu caso",
         },
         {
           index: 3,
           texto:
-            "Dorme melhor ao ver seu caso avançando com orientação jurídica clara e responsável",
+            "Tranquilidade ao compreender o andamento do processo e as medidas necessárias segundo a legislação",
         },
       ],
     },
@@ -145,15 +144,15 @@ const content = {
       background: imgBackground,
     },
     texts: {
-      etiqueta: "Não espere nem mais um segundo",
+      etiqueta: "Informações importantes sobre seu Imposto de Renda",
 
       titulo: (
         <h2>
-          Cada minuto sem agir no seu Imposto de Renda pode aumentar
-          <strong> riscos e prejuízos!</strong>
+          Atenção aos prazos e obrigações do Imposto de Renda é essencial para
+          <strong> evitar complicações</strong>
         </h2>
       ),
-      labelBotaoPrincial: "Quero Resolver Agora Mesmo",
+      labelBotaoPrincial: "Entrar em Contato",
     },
     pontos: [
       {
@@ -168,7 +167,7 @@ const content = {
         index: 2,
         texto: (
           <p>
-            <strong> Analiso </strong>completamente seu caso
+            <strong> Análise </strong>completa do seu caso
           </p>
         ),
       },
@@ -176,7 +175,7 @@ const content = {
         index: 3,
         texto: (
           <p>
-            Respondo <strong>rápido </strong>no Whatsapp
+            Comunicação <strong>ágil </strong>
           </p>
         ),
       },
@@ -189,7 +188,7 @@ const content = {
     },
     texts: {
       titulo: "Por Que Meus Clientes Confiam Em Mim",
-      labelBotaoPrincial: "Fale Diretamente Comigo",
+      labelBotaoPrincial: "Entrar em Contato",
     },
     pontos: [
       {
@@ -245,14 +244,14 @@ const content = {
       background: imgBackground,
     },
     texts: {
-      etiqueta: "Chegou a hora de recuperar o que é seu",
+      etiqueta: "Informações sobre sua restituição",
       titulo: (
         <h2>
-          Entre em contato e farei uma <strong> análise imediata </strong> da
-          sua restituição
+          Entre em contato para uma <strong> análise jurídica </strong> da sua
+          situação fiscal
         </h2>
       ),
-      labelBotaoPrincial: "Quero Ser Atendido Agora",
+      labelBotaoPrincial: "Falar com o Advogado",
       direitosReservados:
         "2025 - Garcia Machado - Todos os direitos reservados",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
