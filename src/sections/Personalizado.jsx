@@ -508,7 +508,7 @@ const ComoPedir = () => (
           </p>
 
           {/* Bloco da Lista de Documentos */}
-          <div className="max-w-4xl p-6 mb-12 bg-white border border-gray-200 shadow-lg sm:p-8 rounded-xl">
+          <div className="max-w-4xl p-6 mb-12 bg-white border border-gray-200 shadow-lg text-start sm:p-8 rounded-xl">
             {requiredDocuments.map((doc, index) => (
               <CheckListItem key={index} text={doc} />
             ))}
