@@ -179,17 +179,22 @@ const advocateImageUrl =
 // Ícone de Fita (para seção de Doenças)
 const RibbonIcon = (props) => (
   <svg
-    {...props}
     xmlns="http://www.w3.org/2000/svg"
+    width="40"
+    height="40"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="w-8 h-8 mb-2 text-lighter font-secondFont"
+    stroke-width="0.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="lucide lucide-ribbon-icon lucide-ribbon"
   >
-    <path d="M10 2a2 2 0 0 0-2 2v18h4v-18a2 2 0 0 0-2-2zM14 2a2 2 0 0 0-2 2v18h4v-18a2 2 0 0 0-2-2zM6 2a2 2 0 0 0-2 2v18h4v-18a2 2 0 0 0-2-2zM18 2a2 2 0 0 0-2 2v18h4v-18a2 2 0 0 0-2-2z" />
+    <path d="M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22" />
+    <path d="m12 18 2.57-3.5" />
+    <path d="M6.243 9.016a7 7 0 0 1 11.507-.009" />
+    <path d="M9.35 14.53 12 11.22" />
+    <path d="M9.35 14.53C7.728 12.246 6 10.221 6 7a6 5 0 0 1 12 0c-.005 3.22-1.778 5.235-3.43 7.5l3.557 4.527a1 1 0 0 1-.203 1.43l-1.894 1.36a1 1 0 0 1-1.384-.215L12 18l-2.679 3.593a1 1 0 0 1-1.39.213l-1.865-1.353a1 1 0 0 1-.203-1.422z" />
   </svg>
 );
 
@@ -404,10 +409,10 @@ const IsencaoIR = () => (
       <section className="bg-neutral-100 font-secondFont" id="isencao-ir">
         <div className="mx-auto text-center max-w-7xl">
           <header className="mb-12">
-            <h2 className="text-xl font-bold text-gray-700 font-secondFont">
+            <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
               Quem tem direito à isenção de IR por doença grave?
-            </h2>
-            <h1 className="mt-1 text-3xl font-extrabold text-lighter sm:text-4xl font-mainFont">
+            </p>
+            <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
               Doenças graves previstas no artigo 6º da Lei nº 7.713/88
             </h1>
             <p className="max-w-4xl mx-auto mt-4 text-base text-gray-600 font-secondFont">
@@ -426,8 +431,10 @@ const IsencaoIR = () => (
                 key={index}
                 className="flex flex-col items-center p-4 text-center bg-gray-50 border border-red-200 rounded-xl shadow-sm transition transform hover:scale-[1.02] hover:shadow-md"
               >
-                <RibbonIcon />
-                <h3 className="mb-1 text-base font-bold text-lighter font-secondFont">
+                <div className="mb-4 text-darker">
+                  <RibbonIcon />
+                </div>
+                <h3 className="mb-4 text-base font-bold text-lighter font-secondFont">
                   {d.name}
                 </h3>
                 <p className="text-xs text-gray-600 font-secondFont">
@@ -479,12 +486,12 @@ const ComoPedir = () => (
   <section className="bg-white font-secondFont" id="como-pedir">
     <SectionArea>
       <SectionWrapper>
-        <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col items-center justify-center mx-auto text-center">
           <header className="mb-8">
             <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
               Documentos Necessários
             </p>
-            <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-mainFont">
+            <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
               COMO FAZER O PEDIDO DE ISENÇÃO
             </h1>
           </header>
@@ -508,7 +515,7 @@ const ComoPedir = () => (
           </div>
 
           {/* Conteúdo Explicativo e Imagem */}
-          <div className="grid items-start grid-cols-1 gap-8 lg:grid-cols-3">
+          <div className="items-start gap-8">
             {/* Coluna de Texto */}
             <div className="space-y-5 text-gray-700 lg:col-span-2 font-secondFont">
               <p>
@@ -559,10 +566,10 @@ const Graficos = () => (
       <SectionArea>
         <SectionWrapper>
           <header className="max-w-4xl mx-auto mb-8 text-center">
-            <p className="mb-1 text-sm font-semibold text-gray-500 uppercase font-secondFont">
+            <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
               Alívio Financeiro para Quem Enfrenta Doenças Graves
             </p>
-            <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-mainFont">
+            <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
               O Que <span className="text-lighter">Muda no Seu Orçamento</span>{" "}
               com a Isenção de Imposto de Renda
             </h1>
@@ -634,12 +641,12 @@ const Graficos = () => (
         <SectionWrapper>
           <div className="">
             <header className="mb-8">
-              <h2 className="text-2xl font-extrabold text-center text-gray-900 sm:text-3xl font-mainFont">
+              <h1 className="text-3xl font-extrabold text-center text-gray-900 uppercase sm:text-4xl font-mainFont">
                 Além de suspender o desconto atual, também{" "}
                 <span className="text-lighter">
                   pedimos a devolução do que já foi cobrado
                 </span>
-              </h2>
+              </h1>
               <h3 className="mt-2 text-xl font-bold text-center text-gray-700 sm:text-2xl font-secondFont">
                 É{" "}
                 <span className="text-lighter">
@@ -712,13 +719,13 @@ const Graficos = () => (
       <SectionArea>
         <SectionWrapper>
           <header className="max-w-4xl mx-auto mb-8 text-center">
-            <p className="mb-1 text-sm font-semibold text-gray-500 uppercase font-secondFont">
+            <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
               Para quem paga mais imposto, o direito à isenção vale ainda mais
             </p>
-            <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl font-mainFont">
+            <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
               Atendemos exclusivamente quem recebe acima de{" "}
               <span className="text-lighter">R$ 4.000,00 por mês</span>
-            </h2>
+            </h1>
           </header>
 
           <p className="max-w-4xl mx-auto mb-10 text-base text-center text-gray-700 font-secondFont">
@@ -840,10 +847,10 @@ const Steps = () => (
         <div className="mx-auto max-w-7xl">
           <div className="text-center ">
             <header className="mb-12">
-              <p className="mb-1 text-sm font-semibold text-gray-500 uppercase font-secondFont">
+              <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
                 COMO FUNCIONA
               </p>
-              <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-mainFont">
+              <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
                 Após Você Enviar Sua Consulta Aqui
               </h1>
             </header>
@@ -870,9 +877,12 @@ const Faq = () => (
       <div className="">
         {/* Cabeçalho da Seção */}
         <div className="max-w-3xl mx-auto mb-16 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl font-mainFont">
+          <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
+            Não tenha mais dúvidas
+          </p>
+          <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
             Perguntas Frequentes
-          </h2>
+          </h1>
           <p className="mt-4 text-lg text-gray-600">
             Tire suas dúvidas sobre isenção de imposto de renda para aposentados
           </p>

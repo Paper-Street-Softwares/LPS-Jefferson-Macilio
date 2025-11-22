@@ -144,7 +144,7 @@ const content = {
       background: imgBackground,
     },
     texts: {
-      etiqueta: "Informações importantes sobre seu Imposto de Renda",
+      etiqueta: "Não deixe pra depois",
 
       titulo: (
         <h2>
@@ -256,10 +256,10 @@ const content = {
         "2025 - Garcia Machado - Todos os direitos reservados",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
-        <div className="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
-          <h1 className="text-3xl font-bold mb-6">Política de Privacidade</h1>
+        <div className="mx-auto leading-relaxed text-gray-900 phone3:max-w-3xl tablet1:px-6 font-secondFont">
+          <h1 className="mb-6 text-3xl font-bold">Política de Privacidade</h1>
 
-          <h2 className="text-xl font-semibold mb-3">
+          <h2 className="mb-3 text-xl font-semibold">
             Informações Importantes
           </h2>
 
@@ -276,11 +276,11 @@ const content = {
             etapas de tratamento.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">Definições</h2>
+          <h2 className="mb-4 text-xl font-semibold">Definições</h2>
 
-          <ul className="list-disc ml-6 mb-6 space-y-2">
+          <ul className="mb-6 ml-6 space-y-2 list-disc">
             <li>
               <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
@@ -339,13 +339,13 @@ const content = {
             informações claras e acessíveis sobre o uso de seus dados.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">Direitos dos Titulares</h2>
+          <h2 className="mb-4 text-xl font-semibold">Direitos dos Titulares</h2>
 
           <p className="mb-3">Os titulares de dados pessoais têm direito a:</p>
 
-          <ul className="list-disc ml-6 mb-6 space-y-2">
+          <ul className="mb-6 ml-6 space-y-2 list-disc">
             <li>Confirmar se seus dados são tratados;</li>
             <li>
               Acessar, corrigir, atualizar ou solicitar a exclusão de seus
@@ -361,15 +361,15 @@ const content = {
             disponibilizados pela empresa.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="mb-4 text-xl font-semibold">
             Coleta e Uso de Dados Pessoais
           </h2>
 
           <p className="mb-3">Podemos coletar dados pessoais por meio de:</p>
 
-          <ul className="list-disc ml-6 mb-6 space-y-2">
+          <ul className="mb-6 ml-6 space-y-2 list-disc">
             <li>
               Formulários de contato e cadastro (nome, e-mail, telefone,
               endereço, CPF, entre outros);
@@ -390,7 +390,7 @@ const content = {
 
           <p className="mb-3">Esses dados são utilizados para:</p>
 
-          <ul className="list-disc ml-6 mb-6 space-y-2">
+          <ul className="mb-6 ml-6 space-y-2 list-disc">
             <li>Operar, manter e melhorar nossos serviços;</li>
             <li>Personalizar a experiência do usuário;</li>
             <li>Cumprir obrigações legais e contratuais;</li>
@@ -404,9 +404,9 @@ const content = {
             </li>
           </ul>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="mb-4 text-xl font-semibold">
             Cookies e Tecnologias de Rastreamento
           </h2>
 
@@ -418,15 +418,15 @@ const content = {
             qualquer momento em seu navegador.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="mb-4 text-xl font-semibold">
             Compartilhamento e Transferência de Dados
           </h2>
 
           <p className="mb-3">Podemos compartilhar dados pessoais com:</p>
 
-          <ul className="list-disc ml-6 mb-6 space-y-2">
+          <ul className="mb-6 ml-6 space-y-2 list-disc">
             <li>
               Parceiros e prestadores de serviço, que auxiliam na operação
               técnica, hospedagem, marketing ou suporte;
@@ -441,9 +441,9 @@ const content = {
             LGPD e com níveis adequados de proteção.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="mb-4 text-xl font-semibold">
             Armazenamento e Retenção dos Dados
           </h2>
 
@@ -454,9 +454,9 @@ const content = {
             de forma segura, respeitando normas técnicas e regulatórias.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="mb-4 text-xl font-semibold">
             Segurança da Informação
           </h2>
 
@@ -468,9 +468,9 @@ const content = {
             práticas de segurança.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="mb-4 text-xl font-semibold">
             Alterações nesta Política
           </h2>
 
@@ -481,9 +481,9 @@ const content = {
             manter-se informado sobre como protegemos suas informações.
           </p>
 
-          <div className="border-t-2 border-black my-8"></div>
+          <div className="my-8 border-t-2 border-black"></div>
 
-          <h2 className="text-xl font-semibold mb-4">Contato</h2>
+          <h2 className="mb-4 text-xl font-semibold">Contato</h2>
 
           <p>
             Em caso de dúvidas, solicitações ou exercício de direitos

@@ -16,7 +16,7 @@ export default function Index() {
 
   return (
     <>
-      <Hero colorMode={colorMode} imagemFocadaBackground={false} />
+      <Hero colorMode={colorMode} imagemFocadaBackground={true} />
       <main>
         {/* <Features /> */}
         <Personalizado />

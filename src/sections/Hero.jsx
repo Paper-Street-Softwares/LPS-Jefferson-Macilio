@@ -29,7 +29,7 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
         </div>
 
         <div
-          className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 sm:pt-16 md:pt-28 ${
+          className={`relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pt-12 pb-24 sm:pt-16 md:pt-28 ${
             imagemFocadaBackground && "lg:pt-10"
           } lg:pb-28 text-center text-fontLighter`}
         >
@@ -38,7 +38,7 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
               <img
                 src={content.hero.imagens.logo}
                 alt="Logomarca"
-                className="w-[288px] phone2:w-[330px] phone3:w-[350px] h-auto mb-6"
+                className="w-[288px] lg:w-[300px] h-auto mb-6"
               />
             </div>
           </MotionDivDownToUp>
