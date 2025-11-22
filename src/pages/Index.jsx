@@ -25,11 +25,11 @@ export default function Index() {
         <Graficos />
         <Steps /> */}
         {/* <Transformacao /> */}
-        <Cta colorMode={colorMode} />
+        {/* <Cta colorMode={colorMode} /> */}
         {/* <About /> */}
       </main>
-      <Footer colorMode={colorMode} />
-      <WhatsappFloatingButton />
+      {/* <Footer colorMode={colorMode} />
+      <WhatsappFloatingButton /> */}
     </>
   );
 }
