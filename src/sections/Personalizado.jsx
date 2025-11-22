@@ -633,14 +633,14 @@ const Graficos = () => (
       <SectionArea className="bg-white">
         <SectionWrapper>
           <div className="">
-            <header className="max-w-4xl mb-8">
-              <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl font-mainFont">
+            <header className="mb-8">
+              <h2 className="text-2xl font-extrabold text-center text-gray-900 sm:text-3xl font-mainFont">
                 Além de suspender o desconto atual, também{" "}
                 <span className="text-lighter">
                   pedimos a devolução do que já foi cobrado
                 </span>
               </h2>
-              <h3 className="mt-2 text-xl font-bold text-gray-700 sm:text-2xl font-secondFont">
+              <h3 className="mt-2 text-xl font-bold text-center text-gray-700 sm:text-2xl font-secondFont">
                 É{" "}
                 <span className="text-lighter">
                   possível requerer a restituição do imposto pago nos últimos 5
@@ -649,7 +649,7 @@ const Graficos = () => (
               </h3>
             </header>
 
-            <div className="grid items-start grid-cols-1 gap-10 lg:grid-cols-2">
+            <div className="flex flex-col items-center justify-center gap-10 text-center ">
               {/* Coluna de Texto Explicativo */}
               <div className="space-y-5 text-gray-700 font-secondFont">
                 <p>
@@ -667,16 +667,16 @@ const Graficos = () => (
                 </p>
 
                 {/* Bloco de Destaque Inferior */}
-                <div className="p-3 mt-6 rounded-md shadow-md bg-lighter">
-                  <p className="text-sm font-medium text-center text-white">
-                    Cada mês de desconto indevido aumenta o valor acumulado a
-                    ser restituído
-                  </p>
-                </div>
+              </div>
+              <div className="p-3 mt-6 rounded-md shadow-md w-fit">
+                <p className="text-sm font-medium text-center text-black">
+                  Cada mês de desconto indevido aumenta o valor acumulado a ser
+                  restituído
+                </p>
               </div>
 
               {/* Coluna do Destaque de 5 Anos */}
-              <div className="flex flex-col items-center space-y-4 text-center lg:items-end lg:text-right font-secondFont">
+              <div className="flex flex-col items-center space-y-4 text-center font-secondFont">
                 <p className="font-black leading-none text-lighter text-7xl sm:text-8xl">
                   5 anos
                 </p>
@@ -867,7 +867,7 @@ const Steps = () => (
 const Faq = () => (
   <SectionArea>
     <SectionWrapper>
-      <div className="mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
+      <div className="">
         {/* Cabeçalho da Seção */}
         <div className="max-w-3xl mx-auto mb-16 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl font-mainFont">
