@@ -51,6 +51,13 @@ export default function Cta({ colorMode }) {
                 {content.cta.texts.titulo}
               </h2>
             </MotionDivDownToUp>
+            <MotionDivDownToUp>
+              <h2
+                className={`max-w-4xl mx-auto mt-4 text-base text-white font-secondFont`}
+              >
+                {content.cta.texts.subtitulo}
+              </h2>
+            </MotionDivDownToUp>
 
             <div className="max-w-3xl mx-auto mt-10 rounded-2xl deskt">
               <MotionDivDownToUp>
@@ -79,6 +86,15 @@ export default function Cta({ colorMode }) {
                         </li>
                       ))}
                   </ul>
+                </div>
+                <div className="p-4 mb-8 border border-red-200 shadow-inner bg-red-50 rounded-xl">
+                  <p className="text-sm font-medium text-lighter">
+                    <span role="img" aria-label="Lâmpada Mágica">
+                      💡
+                    </span>{" "}
+                    Agende um atendimento on-line e, se desejar, venha nos
+                    visitar presencialmente.
+                  </p>
                 </div>
               </MotionDivDownToUp>
 
