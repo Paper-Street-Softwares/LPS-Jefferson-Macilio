@@ -431,7 +431,7 @@ const IsencaoIR = () => (
           </header>
 
           {/* Grid de Doenças */}
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-6">
+          <div className="grid grid-cols-1 phone2:grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-6">
             {diseasesData.map((d, index) => (
               <div
                 key={index}
