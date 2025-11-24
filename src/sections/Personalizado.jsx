@@ -649,7 +649,7 @@ const Graficos = () => (
         <SectionWrapper>
           <div className="">
             <header className="mb-8">
-              <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont  flex justify-center">
+              <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont flex justify-center text-center">
                 Além de suspender o desconto, também buscamos recuperar o que já
                 foi pago{" "}
               </p>
@@ -727,14 +727,15 @@ const Graficos = () => (
       {/* 3.3. SEÇÃO: EXCLUSIVIDADE E TABELA SALARIAL */}
       <SectionArea>
         <SectionWrapper>
-          <header className="max-w-4xl mx-auto mb-8 text-center">
+          <header className="max-w-4xl  mb-8 text-center">
             <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
               Para quem paga mais Imposto de Renda, a isenção faz ainda mais
               diferença{" "}
             </p>
-            <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
-              Atendemos apenas quem recebe acima de{" "}
-              <span className="text-lighter">R$ 4.000,00 mensais</span>
+            <h1 className="text-[28px] leading-8 font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
+              Atendemos pessoas que recebem a partir de
+              <span className="text-lighter"> 1 salário mínimo</span>,
+              independente do valor máximo de renda
             </h1>
           </header>
 
