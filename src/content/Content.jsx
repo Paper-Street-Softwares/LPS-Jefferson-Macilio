@@ -24,13 +24,13 @@ const content = {
     texts: {
       etiqueta: "Advogado Tributarista em São Paulo - SP",
       titulo: {
-        antes: "Assessoria jurídica em",
-        palavraFocada: "Restituição e Regularização",
-        depois: "do Imposto de Renda",
+        antes: "Isenção de",
+        palavraFocada: "Imposto de Renda",
+        depois: "para Doenças Graves",
       },
       subtitulo:
-        "Com sólida experiência em Imposto de Renda, ajudo quem caiu em erros ou malha fina a corrigir tudo com segurança, evitando multas e trazendo mais tranquilidade.",
-      labelBotaoPrincial: "Falar com Advogado no Whatsapp",
+        "Aposentados e pensionistas com doença grave podem parar de pagar IR e ainda receber os valores dos últimos 5 anos.",
+      labelBotaoPrincial: "Entre em Contato",
       labelBotaoSecundario: "Agendar Horário",
     },
   },
@@ -146,37 +146,27 @@ const content = {
     texts: {
       etiqueta: "Não deixe pra depois",
 
-      titulo: (
-        <h2>
-          Atenção aos prazos e obrigações do Imposto de Renda é essencial para
-          <strong> evitar complicações</strong>
-        </h2>
+      titulo: <h2>Estamos Online Para Tirar Suas Dúvidas</h2>,
+      subtitulo: (
+        <p>
+          Clique e fale conosco — nossa equipe está pronta para atender você.
+        </p>
       ),
       labelBotaoPrincial: "Entrar em Contato",
     },
     pontos: [
       {
         index: 1,
-        texto: (
-          <p>
-            Atendimento para<strong> todo o Brasil</strong>
-          </p>
-        ),
+        texto: <p>Receba atendimento imediato com apenas um clique.</p>,
       },
       {
         index: 2,
-        texto: (
-          <p>
-            <strong> Análise </strong>completa do seu caso
-          </p>
-        ),
+        texto: <p>Responder Formulário</p>,
       },
       {
         index: 3,
         texto: (
-          <p>
-            Comunicação <strong>ágil </strong>
-          </p>
+          <p>Envie suas informações e um especialista retornará rapidamente.</p>
         ),
       },
     ],

@@ -16,75 +16,78 @@ import WhatsappFloatingButton from "../components/buttons/WhatsappFloatingButton
 const diseasesData = [
   {
     name: "Neoplasia maligna (câncer)",
-    desc: "Isenção garantida mesmo em caso de remissão de doença.",
+    desc: "Direito assegurado mesmo quando a doença está em remissão.",
   },
   {
     name: "Cardiopatia grave",
-    desc: "Doença do coração com impacto funcional grave.",
+    desc: "Alterações cardíacas com comprometimento funcional relevante.",
   },
-  { name: "AIDS (HIV)", desc: "Síndrome imunológica prevista legalmente." },
+  {
+    name: "AIDS (HIV)",
+    desc: "Condição imunológica com previsão expressa na legislação.",
+  },
   {
     name: "Esclerose Múltipla",
-    desc: "Doença autoimune que assegura direito à isenção.",
+    desc: "Doença autoimune que garante o direito à isenção.",
   },
   {
     name: "Hepatopatia grave",
-    desc: "Enfermidades hepáticas com prejuízo severo à saúde.",
+    desc: "Doenças do fígado com impacto severo na saúde.",
   },
   {
     name: "Cegueira (inclusive monocular)",
-    desc: "Parcial (monocular) ou total, com laudo médico válido.",
+    desc: "Parcial ou total, mediante laudo médico válido.",
   },
   {
     name: "Paralisia irreversível",
-    desc: "Condições que causam incapacidade permanente.",
+    desc: "Condições permanentes que comprometem a mobilidade.",
   },
   {
     name: "Espondiloartrose Deformante",
-    desc: "Trantorno psíquicos que afetam a lucidez.",
+    desc: "Degeneração articular que compromete a função e causa limitações.",
   },
   {
     name: "Contaminação por radiação",
-    desc: "Exposição radioativa com efeitos graves.",
+    desc: "Exposição a material radioativo com efeitos graves reconhecidos.",
   },
-  { name: "Tuberculose ativa", desc: "Doença infecciosa respiratória ativa." },
-  { name: "Hanseníase", desc: "Doença crônica com previsão legal de isenção." },
+  { name: "Tuberculose ativa", desc: "Infecção respiratória em fase ativa." },
+  { name: "Hanseníase", desc: "Doença crônica com direito previsto em lei." },
   {
     name: "Alienação mental",
-    desc: "Trantornos psíquicos que afetam a lucidez.",
+    desc: "Transtornos psíquicos que afetam a capacidade cognitiva.",
   },
   {
     name: "Nefropatia grave",
-    desc: "Insuficiência renal severa que pode exigir diálise ou transplante",
+    desc: "Insuficiência renal severa, podendo exigir diálise ou transplante.",
   },
   {
     name: "Doença de Paget",
-    desc: "Alteração óssea crônica que causa deformidades e dor. Em estados avançados é chamada OSTEÍTE DEFORMANTE.",
+    desc: "Alteração óssea crônica que causa deformidades e dor — também chamada de osteíte deformante.",
   },
   {
     name: "Doença de Parkinson",
-    desc: "Distúrbio neurodegenerativo associado a tremores, rigidez e dificuldades motoras progressivas.",
+    desc: "Distúrbio neurodegenerativo que provoca tremores e dificuldades motoras progressivas.",
   },
   {
     name: "Fibrose Cística",
-    desc: "Doença genética que provoca produção de muco denso, afetando pulmões e sistema digestivo (Mucoviscidose)",
+    desc: "Doença genética que produz muco espesso e afeta pulmões e sistema digestivo.",
   },
   {
     name: "Acidente de Serviço",
-    desc: "Quando a Aposentadoria ou Reforma foi decorrente de Acidente de Serviço",
+    desc: "Quando a aposentadoria ou reforma resulta diretamente de acidente de serviço.",
   },
   {
     name: "Moléstia Profissional",
-    desc: "Quando a Aposentadoria ou Reforma é decorrente de moléstia profissional comprovada.",
+    desc: "Isenção garantida quando a aposentadoria decorre de doença causada pela atividade profissional.",
   },
 ];
 
 // Dados para a seção ComoPedir (Documentos)
 const requiredDocuments = [
-  "Documento de identidade com foto (RG ou CNH)",
-  "Laudo médico com CID e data do diagnóstico (pode ser de médico particular)",
+  "Documento de identificação com foto (RG ou CNH)",
+  "Laudo médico com CID e data do diagnóstico (inclusive de médico particular)",
   "Comprovante de recebimento de aposentadoria ou pensão",
-  "Contracheques recentes com desconto de IR",
+  "Contracheques recentes que mostrem o desconto de IR",
   "Comprovante de residência",
 ];
 
@@ -145,8 +148,12 @@ const processSteps = [
   {
     step: "1º Passo",
     title: "Consulta Inicial",
-    description:
-      "Você clica no botão de “Falar com um Advogado” ou de “Consulte um Advogado” explicando o seu caso.",
+    description: (
+      <>
+        Você clica no botão <i>“Falar com um Advogado”</i> ou{" "}
+        <i>“Consulte um Advogado”</i> e envia uma breve descrição do seu caso.
+      </>
+    ),
     marker: "ATENDIMENTO",
     markerPosition: "right",
   },
@@ -154,7 +161,7 @@ const processSteps = [
     step: "2º Passo",
     title: "Análise e Contato",
     description:
-      "Minha Equipe e eu recebemos sua demanda e entraremos em contato o mais breve possível.",
+      "Minha equipe e eu recebemos sua mensagem e retornamos o mais rápido possível para dar continuidade ao atendimento.",
     marker: "REUNIÃO",
     markerPosition: "left",
   },
@@ -162,7 +169,7 @@ const processSteps = [
     step: "3º Passo",
     title: "Proposta e Honorários",
     description:
-      "Após Analisado será apresentado a solução e só então contrato de honorários.",
+      "Após analisar sua situação, apresentamos a solução ideal e, somente então, enviamos a proposta de honorários.",
     marker: "SOLUÇÃO",
     markerPosition: "right",
   },
@@ -410,17 +417,16 @@ const IsencaoIR = () => (
         <div className="mx-auto text-center max-w-7xl">
           <header className="mb-12">
             <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
-              Quem tem direito à isenção de IR por doença grave?
+              Quem tem direito?
             </p>
             <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
-              Doenças graves previstas no artigo 6º da Lei nº 7.713/88
+              Doenças graves listadas no art. 6º da Lei nº 7.713/88
             </h1>
             <p className="max-w-4xl mx-auto mt-4 text-base text-gray-600 font-secondFont">
-              A legislação brasileira assegura o direito à isenção do Imposto de
-              Renda para aposentados e pensionistas diagnosticados com doenças
-              graves. Trata-se de uma proteção legal que busca reduzir o impacto
-              financeiro dessas condições de saúde, garantindo mais
-              tranquilidade e respeito à dignidade do beneficiário.
+              A lei brasileira garante isenção de Imposto de Renda a aposentados
+              e pensionistas diagnosticados com doenças graves. É uma proteção
+              legal que reduz o impacto financeiro do tratamento e assegura mais
+              tranquilidade e dignidade ao beneficiário.
             </p>
           </header>
 
@@ -450,19 +456,20 @@ const IsencaoIR = () => (
               ⚠️ Importante:
             </p>
             <p className="text-sm text-gray-700">
-              Além das doenças expressamente listadas na Lei nº 7.713/88, há
-              casos em que outras condições graves também foram reconhecidas
-              judicialmente, quando **comprovadamente decorrentes de trabalho ou
-              geradoras de incapacidade permanente**. Estas situações exigem
-              **análise individualizada**, com base em laudos médicos e
-              precedentes judiciais.
+              Além das enfermidades listadas diretamente na Lei nº 7.713/88, há
+              situações em que outras condições graves também obtiveram
+              reconhecimento judicial, especialmente quando relacionadas ao
+              trabalho ou quando geram incapacidade permanente. <br />
+              <br />
+              Nesses casos, a avaliação é individual, baseada em laudos médicos
+              consistentes e no entendimento consolidado pelos tribunais.
             </p>
             <p className="mt-3 text-sm text-gray-700">
-              No escritório, somos especialistas em pedidos de isenção de
-              imposto de renda por doença grave, atuando na **interpretação
-              jurídica e na elaboração de requerimentos fundamentados em
-              decisões reconhecidas pelos tribunais**, inclusive em casos não
-              expressamente previstos na lei, mas amparados pela jurisprudência.
+              Nosso escritório é especializado em pedidos de isenção de Imposto
+              de Renda por doença grave. Atuamos de forma técnica e estratégica,
+              interpretando a legislação e fundamentando cada requerimento em
+              decisões atualizadas dos tribunais — inclusive em casos não
+              listados expressamente na lei, mas amparados pela jurisprudência.
             </p>
           </div>
 
@@ -471,7 +478,7 @@ const IsencaoIR = () => (
             <CtaButton
               icon={content.util.svgWhatsapp}
               link={content.util.ctaWhatsapp}
-              label="Quero Pedir Minha Isenção" // Mantendo o texto original para clareza
+              label="Solicitar Minha Isenção" // Mantendo o texto original para clareza
               colorMode="light"
             />
           </div>
@@ -497,14 +504,14 @@ const ComoPedir = () => (
           </header>
 
           <p className="max-w-4xl mb-8 text-base text-gray-700 font-secondFont">
-            Para ingressar com a{" "}
-            <span className="font-bold text-lighter">ação judicial</span>, não
-            exigimos perícias demoradas nem laudos emitidos exclusivamente por
-            perito oficial do INSS ou do seu órgão de origem. O que realmente
-            importa é a documentação médica adequada e os comprovantes que
-            atestam seu vínculo como aposentado ou pensionista. Esses são os
-            elementos essenciais para fundamentar o pedido com segurança
-            jurídica.
+            Para iniciar o{" "}
+            <span className="font-bold text-lighter">processo judicial</span>,
+            não exigimos perícias demoradas nem laudos emitidos exclusivamente
+            por peritos do INSS ou do órgão de origem.
+            <br />
+            <br />O essencial é possuir documentação médica adequada e os
+            comprovantes que confirmam seu vínculo como aposentado ou
+            pensionista.
           </p>
 
           {/* Bloco da Lista de Documentos */}
@@ -519,36 +526,36 @@ const ComoPedir = () => (
             {/* Coluna de Texto */}
             <div className="space-y-5 text-gray-700 lg:col-span-2 font-secondFont">
               <p>
-                Pode parecer simples à primeira vista, e é natural que algumas
-                pessoas pensem em tentar resolver por conta própria, pela via
-                administrativa. Mas a realidade é outra.
+                À primeira vista, o procedimento pode parecer simples — e é
+                comum que algumas pessoas tentem resolver sozinhas pela via
+                administrativa. Mas, na prática, o cenário é bem diferente.
               </p>
               <p>
-                O processo de isenção envolve detalhes técnicos, exigências
-                específicas e argumentos jurídicos que, quando mal apresentados,
-                levam quase sempre à negativa — mesmo nos casos em que o direito
-                é evidente.
+                O pedido de isenção envolve requisitos técnicos, detalhes legais
+                e fundamentos específicos que, quando apresentados de forma
+                incorreta, resultam quase sempre em negativa — mesmo quando o
+                direito é legítimo e claro.
               </p>
               <p>
-                Aqui no escritório, atuamos com base em experiência prática,
-                conhecimento da jurisprudência e o domínio dos objeções que
-                normalmente são usadas para indeferir pedidos. Sabemos
-                exatamente o que será exigido, o que será contestado e como
-                estruturar um pedido juridicamente sólido desde o início.
+                Aqui no escritório, atuamos com experiência real, conhecimento
+                aprofundado da jurisprudência e domínio das objeções normalmente
+                usadas para recusar pedidos. Sabemos exatamente o que será
+                exigido, o que costuma ser questionado e como construir um
+                requerimento forte desde o início.
               </p>
               <p>
-                Muitos que tentam sozinhos acabam perdendo tempo precioso —
-                tempo esse que poderia estar sendo revertido em alívio
-                financeiro mensal e no reconhecimento de um direito que já
-                poderia estar sendo aplicado.{" "}
-                <span className="font-bold">
-                  É por isso que a condução profissional faz toda a diferença.
+                Muitos que tentam por conta própria acabam perdendo tempo —
+                tempo que poderia estar sendo convertido em economia mensal e no
+                reconhecimento de um direito que já deveria estar sendo
+                aplicado.
+                <span className="font-bold ml-1">
+                  É por isso que a condução profissional faz toda a diferença.{" "}
                 </span>
               </p>
               <CtaButton
                 icon={content.util.svgWhatsapp}
                 link={content.util.ctaWhatsapp}
-                label="Entrar em contato"
+                label="Fale Com o Escritório"
                 colorMode="light"
               />
             </div>
@@ -570,8 +577,7 @@ const Graficos = () => (
               Alívio Financeiro para Quem Enfrenta Doenças Graves
             </p>
             <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
-              O Que <span className="text-lighter">Muda no Seu Orçamento</span>{" "}
-              com a Isenção de Imposto de Renda
+              Como a Isenção de Imposto de Renda Impacta o Seu Orçamento
             </h1>
           </header>
 
@@ -584,28 +590,29 @@ const Graficos = () => (
             {/* Coluna do Texto Explicativo */}
             <div className="space-y-4 text-gray-700 font-secondFont">
               <p>
-                A isenção do imposto de renda representa uma mudança real e
-                imediata na vida financeira de aposentados e pensionistas
-                diagnosticados com doenças graves. Esse direito legal reduz
-                significativamente os descontos no seu benefício, resultando em{" "}
-                <span className="font-bold text-lighter">
-                  mais renda disponível todos os meses
+                A isenção do Imposto de Renda gera um impacto imediato e
+                concreto na vida financeira de aposentados e pensionistas com
+                diagnóstico de doença grave. <br />
+                Com a suspensão do desconto, seu benefício passa a render mais
+                todos os meses,
+                <span className="font-bold text-lighter ml-1">
+                  aumentando de forma real a renda disponível.
                 </span>
                 .
               </p>
               <p>
-                O valor que antes era retido pode ser redirecionado para
-                despesas com saúde, medicamentos, alimentação, moradia ou
-                simplesmente para trazer mais conforto à sua rotina. Em momentos
-                em que cada recurso importa, esse alívio no orçamento faz
+                O valor que antes era retido pode ser direcionado para
+                tratamentos, medicamentos, alimentação, moradia ou para trazer
+                mais conforto e estabilidade ao seu dia a dia. Em um momento em
+                que cada centavo importa, esse alívio no orçamento faz
                 diferença.
               </p>
               <p>
-                Além de representar um ganho financeiro direto, a isenção também
-                significa mais autonomia e tranquilidade para quem já enfrenta
-                desafios com saúde.{" "}
-                <span className="font-bold text-lighter">
-                  Menos impostos, mais dignidade.
+                Além do ganho financeiro direto, a isenção oferece mais
+                autonomia, segurança e tranquilidade para quem já enfrenta
+                desafios de saúde.
+                <span className="font-bold text-lighter ml-1">
+                  Menos imposto, mais dignidade.
                 </span>
               </p>
 
@@ -615,9 +622,10 @@ const Graficos = () => (
                   <span role="img" aria-label="Lâmpada Mágica">
                     💡
                   </span>{" "}
-                  Você já imaginou o quanto esse valor que sai todo mês poderia
-                  estar ajudando você agora? Com a isenção, o dinheiro que antes
-                  ia para o governo volta para o seu orçamento.
+                  Já pensou quanto do que hoje é descontado do seu benefício
+                  poderia estar ajudando você? <br />
+                  Com a isenção, esse dinheiro deixa de ir para o governo e
+                  volta para o seu bolso.
                 </p>
               </div>
 
@@ -641,11 +649,12 @@ const Graficos = () => (
         <SectionWrapper>
           <div className="">
             <header className="mb-8">
+              <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont  flex justify-center">
+                Além de suspender o desconto, também buscamos recuperar o que já
+                foi pago{" "}
+              </p>
               <h1 className="text-3xl font-extrabold text-center text-gray-900 uppercase sm:text-4xl font-mainFont">
-                Além de suspender o desconto atual, também{" "}
-                <span className="text-lighter">
-                  pedimos a devolução do que já foi cobrado
-                </span>
+                Informação jurídica de forma simples e acessível
               </h1>
               <h3 className="mt-2 text-xl font-bold text-center text-gray-700 sm:text-2xl font-secondFont">
                 É{" "}
@@ -660,25 +669,25 @@ const Graficos = () => (
               {/* Coluna de Texto Explicativo */}
               <div className="space-y-5 text-gray-700 font-secondFont">
                 <p>
-                  Ao ingressar com a ação judicial, não buscamos apenas a
-                  suspensão dos descontos mensais de IR. Também incluímos o
-                  pedido de devolução de tudo o que foi cobrado indevidamente
-                  nos últimos cinco anos — desde que os documentos estejam
-                  completos e a condição de saúde já estivesse presente nesse
-                  período.
+                  Quando ingressamos com a ação, nosso objetivo não é apenas
+                  interromper o desconto mensal do Imposto de Renda. Também
+                  solicitamos a restituição de todos os valores cobrados
+                  indevidamente nos últimos cinco anos — desde que haja
+                  documentação completa e que a condição de saúde já estivesse
+                  presente nesse período.
                 </p>
                 <p>
-                  Esse valor pode representar uma quantia expressiva, muitas
-                  vezes superior ao próprio custo da ação, e ajuda a reparar
-                  parte do prejuízo causado pelo desconto indevido.
+                  Essa devolução pode representar um valor significativo, muitas
+                  vezes superior ao próprio custo da ação, e funciona como forma
+                  de compensar o prejuízo causado pelos descontos irregulares.
                 </p>
 
                 {/* Bloco de Destaque Inferior */}
               </div>
               <div className="p-3 mt-6 rounded-md shadow-md w-fit">
                 <p className="text-sm font-medium text-center text-black">
-                  Cada mês de desconto indevido aumenta o valor acumulado a ser
-                  restituído
+                  Cada mês de desconto indevido aumenta o valor total a ser
+                  restituído.
                 </p>
               </div>
 
@@ -720,21 +729,22 @@ const Graficos = () => (
         <SectionWrapper>
           <header className="max-w-4xl mx-auto mb-8 text-center">
             <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
-              Para quem paga mais imposto, o direito à isenção vale ainda mais
+              Para quem paga mais Imposto de Renda, a isenção faz ainda mais
+              diferença{" "}
             </p>
             <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
-              Atendemos exclusivamente quem recebe acima de{" "}
-              <span className="text-lighter">R$ 4.000,00 por mês</span>
+              Atendemos apenas quem recebe acima de{" "}
+              <span className="text-lighter">R$ 4.000,00 mensais</span>
             </h1>
           </header>
 
           <p className="max-w-4xl mx-auto mb-10 text-base text-center text-gray-700 font-secondFont">
-            A isenção do imposto de renda gera maior impacto para aposentados e
-            pensionistas com rendimentos mensais mais elevados, onde os
-            descontos costumam ser altos e constantes. Atuamos exclusivamente
-            para esse perfil de beneficiário, garantindo que o trabalho jurídico
-            entregue um resultado financeiro relevante — tanto na renda mensal
-            quanto na possibilidade de restituição dos últimos anos.
+            A isenção do Imposto de Renda traz um impacto financeiro muito maior
+            para aposentados e pensionistas com rendimentos mais altos, onde o
+            desconto costuma ser significativo e recorrente. Nosso atendimento é
+            voltado exclusivamente a esse perfil, garantindo um resultado
+            relevante — tanto no aumento imediato da renda mensal quanto na
+            possibilidade de recuperar valores pagos nos últimos anos.
           </p>
 
           {/* Tabela de Comparação Salarial */}
@@ -795,9 +805,10 @@ const Graficos = () => (
           {/* Nota da Tabela */}
           <div className="max-w-5xl mx-auto mt-4 text-center font-secondFont">
             <p className="text-xs text-gray-600">
-              <span className="mr-1 font-bold text-red-500">*</span> Os valores
-              de IR são aproximados, baseados na tabela progressiva vigente e
-              sem outras deduções (como dependentes ou plano de saúde).
+              <span className="mr-1 font-bold text-red-500">📌</span> Os valores
+              de IR apresentados são estimados, calculados com base na tabela
+              progressiva atual e sem considerar deduções adicionais
+              (dependentes, saúde, etc.).
             </p>
           </div>
 
@@ -805,7 +816,7 @@ const Graficos = () => (
           <div className="max-w-6xl pt-16 mx-auto">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               <FeatureBox
-                title="Renda aumenta imediatamente"
+                title="Aumento imediato na sua renda mensal"
                 description="Seu salário líquido sobe no próximo mês, assim que o pedido de isenção for concedido."
                 icon={
                   <div className="p-3 bg-red-100 text-lighter rounded-xl">
@@ -814,7 +825,7 @@ const Graficos = () => (
                 }
               />
               <FeatureBox
-                title="Descontos indevidos são suspensos"
+                title="Suspensão dos descontos indevidos"
                 description="Você para de pagar o IR de forma permanente, garantindo alívio mensal contínuo."
                 icon={
                   <div className="p-3 bg-red-100 text-lighter rounded-xl">
@@ -823,13 +834,21 @@ const Graficos = () => (
                 }
               />
               <FeatureBox
-                title="Possibilidade de restituição retroativa"
+                title="Chance de recuperar valores pagos nos últimos anos"
                 description="Recupere o imposto que foi pago indevidamente nos últimos 5 anos."
                 icon={
                   <div className="p-3 bg-red-100 text-lighter rounded-xl">
                     {historyIcon}
                   </div>
                 }
+              />
+            </div>
+            <div className="pt-4 flex justify-center">
+              <CtaButton
+                icon={content.util.svgWhatsapp}
+                link={content.util.ctaWhatsapp}
+                label="Entre em Contato"
+                colorMode="light"
               />
             </div>
           </div>
@@ -851,7 +870,7 @@ const Steps = () => (
                 COMO FUNCIONA
               </p>
               <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
-                Após Você Enviar Sua Consulta Aqui
+                Depois que Você Envia Sua Consulta
               </h1>
             </header>
 
@@ -861,7 +880,7 @@ const Steps = () => (
             <CtaButton
               icon={content.util.svgWhatsapp}
               link={content.util.ctaWhatsapp}
-              label="Consulte um advogado" // Mantendo o texto original para clareza
+              label="CONSULTE UM ADVOGADO" // Mantendo o texto original para clareza
               colorMode="light"
             />
           </div>
@@ -878,13 +897,13 @@ const Faq = () => (
         {/* Cabeçalho da Seção */}
         <div className="max-w-3xl mx-auto mb-16 text-center">
           <p className="mb-1 text-sm font-semibold uppercase text-lighter font-secondFont">
-            Não tenha mais dúvidas
+            TIRE SUAS DÚVIDAS
           </p>
           <h1 className="text-3xl font-extrabold text-gray-900 uppercase sm:text-4xl font-mainFont">
             Perguntas Frequentes
           </h1>
           <p className="mt-4 text-lg text-gray-600">
-            Tire suas dúvidas sobre isenção de imposto de renda para aposentados
+            Confira as perguntas abaixo para esclarecer suas dúvidas.
           </p>
         </div>
 
@@ -919,10 +938,9 @@ const Faq = () => (
 
             <div className="px-6 pb-6 text-base text-gray-600">
               <p>
-                Sim. A isenção pode ser solicitada a qualquer momento, desde que
-                haja diagnóstico de uma das doenças previstas em lei e o
-                desconto de IR esteja acontecendo. Inclusive, é possível pedir a
-                restituição dos valores pagos nos últimos 5 anos.
+                Sim. Desde que haja diagnóstico da doença prevista e o desconto
+                de IR esteja ocorrendo; também pode pedir restituição dos
+                últimos 5 anos.
               </p>
             </div>
           </details>
@@ -950,10 +968,7 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Sim. A isenção pode ser solicitada mesmo com a doença controlada,
-              desde que exista diagnóstico formal e o desconto de IR esteja
-              acontecendo. E é possível solicitar a devolução dos últimos 5
-              anos.
+              Sim. O direito persiste mesmo com controle da doença.
             </div>
           </details>
 
@@ -981,8 +996,8 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Não. A atuação é judicial e baseada em laudos emitidos por médicos
-              habilitados. Não é exigida perícia oficial do INSS.
+              Não. A assessoria é judicial e baseada em laudos médicos de
+              profissionais habilitados, sem exigir perícia do INSS.
             </div>
           </details>
 
@@ -1010,9 +1025,8 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Sim, se for feito de maneira incorreta ou incompleta. Por isso a
-              atuação jurídica técnica evita indeferimentos por detalhes
-              formais.
+              Pode, se a apresentação estiver incorreta ou incompleta; por isso
+              a atuação técnica do escritório é importante.
             </div>
           </details>
 
@@ -1040,9 +1054,8 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Alguns casos recebem liminar em poucas semanas. Já a restituição
-              depende do histórico e análise judicial — quanto antes iniciar,
-              melhor.
+              Alguns casos têm liminar em poucas semanas; a restituição varia
+              conforme análise judicial e documentos.
             </div>
           </details>
 
@@ -1050,7 +1063,8 @@ const Faq = () => (
           <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
             <summary className="flex items-center justify-between p-6 list-none cursor-pointer">
               <span className="text-lg font-medium text-gray-900">
-                Sou servidor público. Tenho os mesmos direitos?
+                Sou servidor público. Tenho os mesmos direitos que quem se
+                aposenta pelo INSS?
               </span>
               <span className="text-gray-600">
                 <svg
@@ -1070,8 +1084,8 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Sim. O direito vale para aposentados e pensionistas do INSS e
-              também para servidores federais, estaduais e municipais.
+              Sim. O direito à isenção se aplica para aposentados ou
+              pensionistas, independentemente se é INSS ou regime próprio.
             </div>
           </details>
 
@@ -1100,8 +1114,8 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Sim. É possível ingressar com ação judicial para pedir a
-              restituição dos últimos 5 anos.
+              Sim. Se nunca pediu retroativo, pode ingressar com ação para
+              restituição desde que esteja no prazo legal.
             </div>
           </details>
 
@@ -1109,7 +1123,8 @@ const Faq = () => (
           <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
             <summary className="flex items-center justify-between p-6 list-none cursor-pointer">
               <span className="text-lg font-medium text-gray-900">
-                Quanto tempo leva para a isenção começar a valer?
+                Quanto tempo leva para começar a valer a isenção após o ingresso
+                da ação?
               </span>
               <span className="text-gray-600">
                 <svg
@@ -1129,14 +1144,14 @@ const Faq = () => (
               </span>
             </summary>
             <div className="px-6 pb-6 text-base text-gray-600">
-              Muitos processos recebem liminar em poucas semanas, suspendendo o
-              desconto de imediato. Já a restituição pode levar mais tempo por
-              envolver análise detalhada.
+              Depende, mas muitos processos têm decisão liminar em poucas
+              semanas. A restituição retroativa pode demorar mais, conforme
+              trâmite judicial.
             </div>
           </details>
 
           {/* ITEM 9 */}
-          <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
+          {/* <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
             <summary className="flex items-center justify-between p-6 list-none cursor-pointer">
               <span className="text-lg font-medium text-gray-900">
                 A isenção vale apenas para aposentadoria por invalidez?
@@ -1162,10 +1177,10 @@ const Faq = () => (
               Não. Qualquer aposentado ou pensionista com diagnóstico de doença
               grave tem direito, mesmo que não seja aposentadoria por invalidez.
             </div>
-          </details>
+          </details> */}
 
           {/* ITEM 10 */}
-          <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
+          {/* <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
             <summary className="flex items-center justify-between p-6 list-none cursor-pointer">
               <span className="text-lg font-medium text-gray-900">
                 A isenção é automática após o diagnóstico?
@@ -1191,10 +1206,10 @@ const Faq = () => (
               Não. É preciso solicitar formalmente ao órgão pagador ou via ação
               judicial. Só após deferimento a isenção passa a valer.
             </div>
-          </details>
+          </details> */}
 
           {/* ITEM 11 */}
-          <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
+          {/* <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
             <summary className="flex items-center justify-between p-6 list-none cursor-pointer">
               <span className="text-lg font-medium text-gray-900">
                 A isenção vale para todas as fontes de renda?
@@ -1220,10 +1235,10 @@ const Faq = () => (
               Não. Ela vale apenas para aposentadoria, pensão ou reforma. Outras
               rendas continuam tributadas.
             </div>
-          </details>
+          </details> */}
 
           {/* ITEM 12 */}
-          <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
+          {/* <details className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl group">
             <summary className="flex items-center justify-between p-6 list-none cursor-pointer">
               <span className="text-lg font-medium text-gray-900">
                 O valor retroativo vira precatório?
@@ -1258,7 +1273,7 @@ const Faq = () => (
                 muito o risco de virar precatório.
               </p>
             </div>
-          </details>
+          </details> */}
         </div>
 
         {/* CTA */}
@@ -1266,7 +1281,7 @@ const Faq = () => (
           <CtaButton
             icon={content.util.svgWhatsapp}
             link={content.util.ctaWhatsapp}
-            label="Consulte um advogado" // Mantendo o texto original para clareza
+            label="Clique aqui caso tenha mais dúvidas" // Mantendo o texto original para clareza
             colorMode="light"
           />
         </div>
