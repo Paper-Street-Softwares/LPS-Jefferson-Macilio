@@ -87,9 +87,13 @@ export default function Footer({ colorMode }) {
                   Paper Street
                 </a>
               </p>
-              <a onClick={abrirModal} className="underline cursor-pointer">
+              <button
+                onClick={abrirModal}
+                aria-label="Abre um Modal com os termos da Política de privacidade"
+                className="underline cursor-pointer outline-none w-fit mx-auto"
+              >
                 Políticas de privacidade
-              </a>{" "}
+              </button>{" "}
             </div>
           </div>
           <Dialog

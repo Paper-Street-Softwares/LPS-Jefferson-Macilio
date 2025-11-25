@@ -32,12 +32,13 @@ function CardFeatures({
       </p>
       {modal === true && (
         <div className="mt-4">
-          <a
+          <button
             onClick={abrirModal}
+            aria-label="Abre um Modal explicativo"
             className="cursor-pointer underline text-darker font-secondFont"
           >
             {labelBotaoModal}
-          </a>
+          </button>
         </div>
       )}{" "}
       <Dialog

@@ -10,6 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preload" as="image" href="/hero.webp" fetchpriority="high" />
+
+    <link
+      rel="preload"
+      href="/src/index.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <title>
       Garcia Machado Advocacia – Isenção e Restituição de Imposto de Renda em
       Campo Grande - MS
@@ -148,6 +157,20 @@ Advocacia Tributária MS.
     <!-- Fim Meta tags -->
     <!-- Tags Tráfego -->
     <!-- Fim Tags Tráfego -->
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .hero {
+        width: 450px;
+        height: 400px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <!-- Tags Tráfego -->
