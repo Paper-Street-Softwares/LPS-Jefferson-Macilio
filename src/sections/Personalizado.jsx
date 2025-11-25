@@ -273,9 +273,9 @@ const historyIcon = (
 const FeatureBox = ({ title, description, icon }) => (
   <div className="flex flex-col items-center p-4 text-center font-secondFont">
     <div className="mb-3 text-lighter">{icon}</div>
-    <h3 className="mb-1 text-lg font-bold text-gray-800 font-secondFont">
+    <h1 className="mb-1 text-lg font-bold text-gray-800 font-secondFont">
       {title}
-    </h3>
+    </h1>
     <p className="text-sm text-gray-600 font-secondFont">{description}</p>
   </div>
 );
@@ -440,9 +440,9 @@ const IsencaoIR = () => (
                 <div className="mb-4 text-darker">
                   <RibbonIcon />
                 </div>
-                <h3 className="mb-4 text-base font-bold text-lighter font-secondFont">
+                <h1 className="mb-4 text-base font-bold text-lighter font-secondFont">
                   {d.name}
-                </h3>
+                </h1>
                 <p className="text-xs text-gray-600 font-secondFont">
                   {d.desc}
                 </p>
@@ -656,13 +656,13 @@ const Graficos = () => (
               <h1 className="text-3xl font-extrabold text-center text-gray-900 uppercase sm:text-4xl font-mainFont">
                 Informação jurídica de forma simples e acessível
               </h1>
-              <h3 className="mt-2 text-xl font-bold text-center text-gray-700 sm:text-2xl font-secondFont">
+              <h1 className="mt-2 text-xl font-bold text-center text-gray-700 sm:text-2xl font-secondFont">
                 É{" "}
                 <span className="text-lighter">
                   possível requerer a restituição do imposto pago nos últimos 5
                   anos
                 </span>
-              </h3>
+              </h1>
             </header>
 
             <div className="flex flex-col items-center justify-center gap-10 text-center ">
