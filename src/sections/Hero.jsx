@@ -19,7 +19,7 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
       <div className="relative overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img
-            src={content.hero.imagens.backgroundHero}
+            src="background.webp"
             alt="Imagem ilustrativa"
             className="object-cover w-full h-full"
           />
@@ -36,16 +36,18 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
           <MotionDivDownToUp>
             <div className="flex items-center justify-center w-full my-6 desktop1:my-10">
               <img
-                src={content.hero.imagens.logo}
+                src="/logo.webp"
                 alt="Logomarca"
                 className="w-[288px] lg:w-[300px] h-auto mb-6"
+                width={300}
+                height={294}
               />
             </div>
           </MotionDivDownToUp>
           {imagemFocadaBackground && (
             <MotionDivDownToUp className="flex justify-center w-full mb-8">
               <img
-                src={content.hero.imagens.focadaHero}
+                src="/hero.webp"
                 alt=""
                 className="object-cover rounded-[4px] h-[400px] w-[450px] md:h-[600px] md:w-[600px] lg:h-[500px] lg:w-[500px]"
               />
