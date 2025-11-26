@@ -48,7 +48,11 @@ export default function Hero({ imagemFocadaBackground, colorMode }) {
             <MotionDivDownToUp className="flex justify-center w-full mb-8">
               <img
                 src="/hero.webp"
-                alt=""
+                fetchpriority="high"
+                decoding="sync"
+                width={600}
+                height={600}
+                alt="imagem ilustrativa de um Casal"
                 className="object-cover rounded-[4px] h-[400px] w-[450px] md:h-[600px] md:w-[600px] lg:h-[500px] lg:w-[500px]"
               />
             </MotionDivDownToUp>
