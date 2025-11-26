@@ -389,7 +389,7 @@ const ProcessTimeline = () => (
       return (
         <div key={index} className="relative w-full mb-12">
           {/* Bloco de Conteúdo (Card) */}
-          <div className="w-full p-4 border-l-4 border-red-400 shadow-md bg-red-50 rounded-xl">
+          <div className="w-full p-4 border-l-4 border-red-400 shadow-md bg-white rounded-xl">
             <p className="mb-1 text-sm font-bold text-lighter">{item.step}</p>
             <p className="mb-2 text-lg font-semibold text-lighter">
               {item.title}
@@ -451,8 +451,8 @@ const IsencaoIR = () => (
           </div>
 
           {/* Bloco Importante */}
-          <div className="max-w-4xl p-6 mx-auto mt-12 text-left border border-red-200 shadow-md bg-red-50 rounded-xl font-secondFont">
-            <p className="mb-2 text-sm font-bold text-red-600">
+          <div className="max-w-4xl p-6 mx-auto mt-12 text-left border border-red-200 shadow-md bg-red-0 rounded-xl font-secondFont">
+            <p className="mb-2 text-sm font-bold text-red-800">
               ⚠️ Importante:
             </p>
             <p className="text-sm text-gray-700">
@@ -617,7 +617,7 @@ const Graficos = () => (
               </p>
 
               {/* Bloco de Destaque */}
-              <div className="p-4 mt-6 border border-red-200 shadow-inner bg-red-50 rounded-xl">
+              <div className="p-4 mt-6 border border-red-200 shadow-inner bg-red-0 rounded-xl">
                 <p className="text-sm font-medium text-lighter">
                   <span role="img" aria-label="Lâmpada Mágica">
                     💡
@@ -751,7 +751,7 @@ const Graficos = () => (
           {/* Tabela de Comparação Salarial */}
           <div className="w-full mx-auto overflow-x-auto border border-gray-200 shadow-xl md:w-fit rounded-xl">
             <table className="divide-y divide-gray-200 font-secondFont">
-              <thead className="bg-gray-100">
+              <thead className="bg-gray-0">
                 <tr>
                   <th
                     scope="col"
@@ -761,19 +761,19 @@ const Graficos = () => (
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-xs font-bold tracking-wider text-left text-red-500 uppercase"
+                    className="px-6 py-3 text-xs font-bold tracking-wider text-left text-red-700 uppercase"
                   >
                     IR (antes da isenção)
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-xs font-bold tracking-wider text-left text-pink-500 uppercase"
+                    className="px-6 py-3 text-xs font-bold tracking-wider text-left text-pink-800 uppercase"
                   >
                     Salário Líquido <br className="sm:hidden" /> com desconto
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-xs font-bold tracking-wider text-left text-green-600 uppercase"
+                    className="px-6 py-3 text-xs font-bold tracking-wider text-left text-green-700 uppercase"
                   >
                     Salário Líquido <br className="sm:hidden" /> com isenção
                   </th>
@@ -788,13 +788,13 @@ const Graficos = () => (
                     <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
                       {row.salary}
                     </td>
-                    <td className="px-6 py-4 text-sm text-red-500 whitespace-nowrap">
+                    <td className="px-6 py-4 text-sm text-red-700 whitespace-nowrap">
                       {row.ir}
                     </td>
-                    <td className="px-6 py-4 text-sm text-pink-500 whitespace-nowrap">
+                    <td className="px-6 py-4 text-sm text-pink-800 whitespace-nowrap">
                       {row.liquidWithDiscount}
                     </td>
-                    <td className="px-6 py-4 text-sm font-bold text-green-600 whitespace-nowrap">
+                    <td className="px-6 py-4 text-sm font-bold text-green-700 whitespace-nowrap">
                       {row.liquidWithExemption}
                     </td>
                   </tr>
@@ -806,7 +806,7 @@ const Graficos = () => (
           {/* Nota da Tabela */}
           <div className="max-w-5xl mx-auto mt-4 text-center font-secondFont">
             <p className="text-xs text-gray-600">
-              <span className="mr-1 font-bold text-red-500">📌</span> Os valores
+              <span className="mr-1 font-bold text-red-700">📌</span> Os valores
               de IR apresentados são estimados, calculados com base na tabela
               progressiva atual e sem considerar deduções adicionais
               (dependentes, saúde, etc.).
