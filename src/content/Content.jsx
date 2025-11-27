@@ -24,7 +24,7 @@ const content = {
     texts: {
       etiqueta: "Advogado Tributarista em São Paulo - SP",
       titulo: {
-        antes: "Isenção de",
+        antes: "Isenção e Restituição de",
         palavraFocada: "Imposto de Renda",
         depois: "para Doenças Graves",
       },
