@@ -1,5 +1,4 @@
 import MotionDivDownToUp from "../animations/MotionDownToUp";
-import { useCallback } from "react";
 
 export default function CtaButton({
   link,
@@ -21,35 +20,11 @@ export default function CtaButton({
   const colors = themes[colorMode] || themes.light;
   const shineColor = shineThemes[colorMode] || shineThemes.light;
 
-  const handleClick = useCallback(
-    (e) => {
-      e.preventDefault();
-
-      const url = new URL(link);
-      const phone = url.pathname.replace("/", "").replace("+", "");
-      const text = url.searchParams.get("text") || "";
-
-      const encodedText = encodeURIComponent(text);
-
-      const direct = `whatsapp://send?phone=${phone}&text=${encodedText}`;
-
-      const fallback = `https://wa.me/${phone}?text=${encodedText}`;
-
-      window.location.href = direct;
-
-      setTimeout(() => {
-        window.open(fallback, "_blank");
-      }, 1200);
-    },
-    [link]
-  );
-
   return (
     <MotionDivDownToUp className="inline-block">
       <a
-        href={link}
         target="_blank"
-        onClick={handleClick}
+        href={link}
         className={`
           relative
           overflow-hidden
